@@ -1,0 +1,34 @@
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+<!--index.ejs-->
+<!--Julian Lawrence Manahan-->
+<!--301148396-->
+<!--October 1st, 2021-->
+  <!--Main Content-->
+  <main class="container">
+    <div class = "jumbotron">
+      <h1 class="display-4">Welcome to Julian Lawrence's <%= title %> Page</h1>
+      <% if (title == "Home") { %>
+      <%- include content/Home.ejs %>
+      <% } else if (title =="About Me") {%>
+      <%- include content/aboutme.ejs %>
+      <% } else if (title =="Projects") {%>
+      <%- include content/projects.ejs %>
+      <% } else if (title =="Services") {%>
+      <%- include content/services.ejs %>
+      <% } else if (title =="Contact Info"){%>
+      <%- include content/contact.ejs %>
+      <% } %>
+    </div>
+  </main>
+
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>
+
+
+
+ 
+
+
+
+
